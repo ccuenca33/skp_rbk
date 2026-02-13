@@ -1,2 +1,8 @@
-código verif Schneider:
-DJ38JQJ8EVGY8YVY7HZGJ5EN
+{
+"name": "skp_rbk",
+"short_name": "skp_rbk",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "#0f172a",
+"theme_color": "#0f172a"
+}
