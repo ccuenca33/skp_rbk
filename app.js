@@ -90,12 +90,19 @@ window.onload = function(){
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
     } else {
+        if(id === "P1"){
             inputContainer.innerHTML = `
-                <input id="codeInput" placeholder="Código">
+                <input id="codeInput" type="number">
+                <button id="validateBtn" onclick="validate()">VALIDAR</button>
+            `;
+        } else {
+            inputContainer.innerHTML = `
+                <input id="codeInput">
                 <button id="validateBtn" onclick="validate()">VALIDAR</button>
             `;
         }
     }
+}
 
 function validate(){
     let id = getQRid();
@@ -132,6 +139,7 @@ function validate(){
         }
     }
 }
+
 
 
 
