@@ -58,39 +58,21 @@ color:white;
     margin:14px 0;
 }
 
-.color-inputs div{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.color-inputs select{
+.color-inputs input{
+    width:30%;
     padding:10px;
     border-radius:8px;
     border:none;
-    font-size:16px;
-    color:white;
+    font-size:18px;
     font-weight:700;
     text-align:center;
+    color:white;
 }
 
-/* Fondos por color, con tonos agradables */
-#redSelect {
-    background-color: #b91c1c;  
-}
-
-#greenSelect {
-    background-color: #15803d; 
-}
-
-#blueSelect {
-    background-color: #1e40af;  
-}
-
-/* Opcional: placeholder blanco para mejor visibilidad */
-.color-inputs select option[value=""] {
-    color: #f0f0f0;
-}
+/* Fondos por color */
+#redInput { background-color: #b91c1c; }
+#greenInput { background-color: #15803d; }
+#blueInput { background-color: #1e40af; }
 
 #pageTitle{
     font-family: 'Horizon', sans-serif;
@@ -115,6 +97,7 @@ color:white;
     margin-top: 20px;
     font-weight: 700; /* opcional */
 }
+
 
 
 
