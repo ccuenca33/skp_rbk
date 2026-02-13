@@ -91,13 +91,14 @@ color:white;
 .ok{
     color: #22c55e; /* mismo verde que el botón */
     margin-top: 20px;
-    font-weight: 700; /* opcional para resaltar */
+    font-weight: 700;
 }
 .fail{
     color: #fca5a5; /* rojo más suave */
     margin-top: 20px;
-    font-weight: 700; /* opcional */
+    font-weight: 700;
 }
+
 
 
 
