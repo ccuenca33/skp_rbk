@@ -3,7 +3,7 @@ let qrMap = {
 "P2": "SOL002",
 "P3": "SOL003",
 "P4": "SOL004",
-"P5": "SOL005",
+"P5": "ABCD",
 "P6": "SOL006"
 };
 
@@ -151,6 +151,7 @@ function validate(){
         }
     }
 }
+
 
 
 
