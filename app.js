@@ -78,39 +78,24 @@ window.onload = function(){
         inputContainer.innerHTML = `
             <div class="color-inputs">
                 <div>
-                    <select id="redSelect">
-                        <option value=""></option>
-                        <option value="triangulo">⬜</option>
-                        <option value="circulo">⚪</option>
-                        <option value="aspa">🤍</option>
-                    </select>
+                    <input id="redInput" type="number" placeholder="Rojo">
                 </div>
                 <div>
-                    <select id="greenSelect">
-                        <option value=""></option>
-                        <option value="triangulo">⬜</option>
-                        <option value="circulo">⚪</option>
-                        <option value="aspa">🤍</option>
-                    </select>
+                    <input id="greenInput" type="number" placeholder="Verde">
                 </div>
                 <div>
-                    <select id="blueSelect">
-                        <option value=""></option>
-                        <option value="triangulo">⬜</option>
-                        <option value="circulo">⚪</option>
-                        <option value="aspa">🤍</option>
-                    </select>
+                    <input id="blueInput" type="number" placeholder="Azul">
                 </div>
             </div>
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
-} else {
-        inputContainer.innerHTML = `
-            <input id="codeInput" placeholder="Código">
-            <button id="validateBtn" onclick="validate()">VALIDAR</button>
-        `;
+    } else {
+            inputContainer.innerHTML = `
+                <input id="codeInput" placeholder="Código">
+                <button id="validateBtn" onclick="validate()">VALIDAR</button>
+            `;
+        }
     }
-}
 
 function validate(){
     let id = getQRid();
@@ -147,6 +132,7 @@ function validate(){
         }
     }
 }
+
 
 
 
