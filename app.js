@@ -79,26 +79,26 @@ window.onload = function(){
             <div class="color-inputs">
                 <div>
                     <select id="redSelect">
-                        <option value="">▲ ▼ ✖</option>
-                        <option value="triangulo">▲ Triángulo</option>
-                        <option value="circulo">● Círculo</option>
-                        <option value="aspa">✖ Aspa</option>
+                        <option value=""></option>
+                        <option value="triangulo">⬜</option>
+                        <option value="circulo">⚪</option>
+                        <option value="aspa">🤍</option>
                     </select>
                 </div>
                 <div>
                     <select id="greenSelect">
-                        <option value="">▲ ▼ ✖</option>
-                        <option value="triangulo">▲ Triángulo</option>
-                        <option value="circulo">● Círculo</option>
-                        <option value="aspa">✖ Aspa</option>
+                        <option value=""></option>
+                        <option value="triangulo">⬜</option>
+                        <option value="circulo">⚪</option>
+                        <option value="aspa">🤍</option>
                     </select>
                 </div>
                 <div>
                     <select id="blueSelect">
-                        <option value="">▲ ▼ ✖</option>
+                        <option value=""></option>
                         <option value="triangulo">▲ Triángulo</option>
-                        <option value="circulo">● Círculo</option>
-                        <option value="aspa">✖ Aspa</option>
+                        <option value="circulo">⚪</option>
+                        <option value="aspa">🤍</option>
                     </select>
                 </div>
             </div>
@@ -147,6 +147,7 @@ function validate(){
         }
     }
 }
+
 
 
 
