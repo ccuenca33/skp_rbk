@@ -26,21 +26,21 @@ let titleMap = {
 };
 
 let successMap = {
-"P1": "✅¡Genial!<br>Acceso desbloqueado.<br>Revela las cartas 4, 5, 6",
-"P2": "✅¡Maravilla parseluki!<br>Reconstrucción P2 completada.<br>Revela las cartas...",
-"P3": "✅¡You're doing great!<br>Reconstrucción P3 completada.<br>Revela las cartas...",
-"P4": "✅¡Dilo tatona!<br>Reconstrucción P4 completada.<br>Revela las cartas...",
-"P5": "✅¡Illo cabesaaa! Diagnóstico exitoso.<br>Archivo restaurado correctamente.<br>Revela las cartas...",
-"P6": "✅¡Mi maiti es la más informática!<br>Permisos admin conseguidos.<br>Estás habilitada para generar recuerdos nuevos."
+"P1": "✅ ¡Genial!<br>Acceso desbloqueado<br>Revela las cartas 4, 5, 6",
+"P2": "✅ ¡Maravilla parseluki!<br>Reconstrucción P2 completada<br>Revela las cartas...",
+"P3": "✅ ¡You're doing great!<br>Reconstrucción P3 completada<br>Revela las cartas...",
+"P4": "✅ ¡Dilo tatona!<br>Reconstrucción P4 completada<br>Revela las cartas...",
+"P5": "✅ ¡Illo cabesaaa!<br>Diagnóstico exitoso. Archivo restaurado correctamente.<br>Revela las cartas...",
+"P6": "✅ ¡Mi maiti es la más informática!<br>Permisos admin conseguidos. Estás habilitada para generar recuerdos nuevos."
 };
 
 let errorMap = {
-"P1": "❌Código incorrecto.<br>No voy a dejar la contraseña anotada en cualquier sitio.<br>Pff... y tengo que cambiar de teclado.",
-"P2": "❌Código incorrecto.<br>La reconstrucción cronológica es importante.",
-"P3": "❌Código incorrecto.<br>Trazar un plan correctamente no es moco de pavo.",
-"P4": "❌Código incorrecto.<br>Odio cuando se sobreescribe la memoria, no veo nada.",
-"P5": "❌Código incorrecto.<br>Al final todo tiene un sentido.",
-"P6": "❌Código incorrecto.<br>Ahora no me puedes fallar.<br>Tienes mejor vista que yo."
+"P1": "❌ Código incorrecto<br>No voy a dejar la contraseña anotada en cualquier sitio y pff... tengo que cambiar de teclado.",
+"P2": "❌ Código incorrecto<br>La reconstrucción cronológica es importante.",
+"P3": "❌ Código incorrecto<br>Trazar un plan correctamente no es moco de pavo.",
+"P4": "❌ Código incorrecto<br>Joeee odio cuando se sobreescribe la memoria, no veo nada.",
+"P5": "❌ Código incorrecto<br>Al final todo tiene un sentido.",
+"P6": "❌ Código incorrecto<br>¡Ahora no me puedes fallar, si tienes mejor vista que yo!"
 };
 
 function getQRid(){
@@ -50,11 +50,6 @@ function getQRid(){
 
 window.onload = function(){
     let id = getQRid();
-
-    if(id && qrMap[id]){
-        // Auto rellenar el input con el código real
-        document.getElementById("codeInput").value = qrMap[id];
-    }
 
     // Cambiar título dinámicamente si existe en titleMap
     if(titleMap[id]){
@@ -84,6 +79,7 @@ function validate(){
         }
     }
 }
+
 
 
 
