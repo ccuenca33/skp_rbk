@@ -72,7 +72,7 @@ color:white;
 
 /* Fondos por color */
 #redInput { background-color: #ED2424; }
-#greenInput { background-color: #24ED6B; }
+#greenInput { background-color: #19E63A; }
 #blueInput { background-color: #2499ED; }
 
 #pageTitle{
@@ -89,15 +89,16 @@ color:white;
 }
 
 .success{
-    color: #22c55e; /* mismo verde que el botón */
+    color: #22c55e; 
     margin-top: 20px;
     font-weight: 700;
 }
 .error{
-    color: #fca5a5; /* rojo más suave */
+    color: #F23030; 
     margin-top: 20px;
     font-weight: 700;
 }
+
 
 
 
