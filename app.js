@@ -1,9 +1,9 @@
 let validCodes = {
-"Mairena": "Acceso válido",
+"MAIRENA": "Acceso válido",
 "1422": "Acceso válido",
 "VMW": "Acceso válido",
 "H6K-31R": "Acceso válido",
-"Mairena1422VMWH6K-31R": "Acceso válido"
+"MAIRENA1422VMWH6K-31R": "Acceso válido"
 };
 
 let validCodesP6 = {
@@ -118,9 +118,17 @@ function validate(){
 
     } else if(id === "P6"){
 
-        let r = document.getElementById("redSelect").value;
-        let g = document.getElementById("greenSelect").value;
-        let b = document.getElementById("blueSelect").value;
+        let r = parseInt(document.getElementById("redInput").value);
+        let g = parseInt(document.getElementById("greenInput").value);
+        let b = parseInt(document.getElementById("blueInput").value);
+        
+        if(r === validCodesP6.red && g === validCodesP6.green && b === validCodesP6.blue){
+            result.innerHTML = successMap[id];
+            result.classList.add("success");
+        } else {
+            result.innerHTML = errorMap[id];
+            result.classList.add("error");
+        }
 
         if(r == validCodesP6.red && g == validCodesP6.green && b == validCodesP6.blue){
             result.innerHTML = successMap[id];
@@ -140,9 +148,11 @@ function validate(){
         } else {
             result.innerHTML = errorMap[id];
             result.classList.add("error");
-        }
+}
+
     }
 }
+
 
 
 
