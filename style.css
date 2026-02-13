@@ -81,8 +81,17 @@ color:white;
     /* El resto de propiedades del botón ya están en button{} */
 }
 
-.ok{color:#4ade80;margin-top:20px;}
-.fail{color:#f87171;margin-top:20px;}
+.ok{
+    color: #22c55e; /* mismo verde que el botón */
+    margin-top: 20px;
+    font-weight: 700; /* opcional para resaltar */
+}
+.fail{
+    color: #fca5a5; /* rojo más suave */
+    margin-top: 20px;
+    font-weight: 700; /* opcional */
+}
+
 
 
 
