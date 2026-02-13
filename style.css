@@ -59,7 +59,7 @@ color:white;
 }
 
 .color-inputs input{
-    width:40%;
+    width:60%;
     padding:10px;
     border-radius:8px;
     border:none;
@@ -97,6 +97,7 @@ color:white;
     margin-top: 20px;
     font-weight: 700; /* opcional */
 }
+
 
 
 
