@@ -87,7 +87,7 @@ window.onload = function(){
             `;
         } else {
             inputContainer.innerHTML = `
-                <input id="codeInput">
+                <input id="codeInput" type="text">
                 <button id="validateBtn" onclick="validate()">VALIDAR</button>
             `;
         }
@@ -129,6 +129,7 @@ function validate(){
         }
     }
 }
+
 
 
 
