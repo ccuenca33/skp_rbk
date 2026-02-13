@@ -1,5 +1,5 @@
 body{
-font-family:Arial;
+font-family:Consolas;
 background:#0f172a;
 color:white;
 display:flex;
@@ -32,5 +32,19 @@ background:#22c55e;
 color:white;
 }
 
+#pageTitle{
+    font-family: 'Horizon', sans-serif;
+    font-weight:700;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+#validateBtn{
+    font-family: 'Consolas', sans-serif;
+    font-weight:700;
+    /* El resto de propiedades del botón ya están en button{} */
+}
+
 .ok{color:#4ade80;margin-top:20px;}
 .fail{color:#f87171;margin-top:20px;}
+
