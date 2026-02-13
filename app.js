@@ -75,31 +75,27 @@ window.onload = function(){
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
     } else if(id === "P6"){
-        // 3 campos para colores y símbolos
         inputContainer.innerHTML = `
             <div class="color-inputs">
                 <div>
-                    <label>Rojo:</label>
                     <select id="redSelect">
-                        <option value="">Selecciona</option>
+                        <option value="">▲ ▼ ✖</option>
                         <option value="triangulo">▲ Triángulo</option>
                         <option value="circulo">● Círculo</option>
                         <option value="aspa">✖ Aspa</option>
                     </select>
                 </div>
                 <div>
-                    <label>Verde:</label>
                     <select id="greenSelect">
-                        <option value="">Selecciona</option>
+                        <option value="">▲ ▼ ✖</option>
                         <option value="triangulo">▲ Triángulo</option>
                         <option value="circulo">● Círculo</option>
                         <option value="aspa">✖ Aspa</option>
                     </select>
                 </div>
                 <div>
-                    <label>Azul:</label>
                     <select id="blueSelect">
-                        <option value="">Selecciona</option>
+                        <option value="">▲ ▼ ✖</option>
                         <option value="triangulo">▲ Triángulo</option>
                         <option value="circulo">● Círculo</option>
                         <option value="aspa">✖ Aspa</option>
@@ -108,7 +104,7 @@ window.onload = function(){
             </div>
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
-    } else {
+} else {
         inputContainer.innerHTML = `
             <input id="codeInput" placeholder="Código">
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
@@ -151,6 +147,7 @@ function validate(){
         }
     }
 }
+
 
 
 
