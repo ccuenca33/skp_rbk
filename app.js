@@ -32,7 +32,7 @@ let successMap = {
 
 let errorMap = {
 "P1": "❌ Código incorrecto<br>No voy a dejar la contraseña anotada en cualquier sitio y pff... tengo que cambiar de teclado.",
-"P2": "❌ Código incorrecto<br>La reconstrucción cronológica es importante.",
+"P2": "❌ Código incorrecto<br>Parece que has perdido la cuenta.",
 "P3": "❌ Código incorrecto<br>Trazar un plan correctamente no es moco de pavo.",
 "P4": "❌ Código incorrecto<br>Joeee odio cuando se sobreescribe la memoria, no veo nada.",
 "P5": "❌ Código incorrecto<br>Al final todo tiene un sentido.",
@@ -152,6 +152,7 @@ function validate(){
 
     }
 }
+
 
 
 
