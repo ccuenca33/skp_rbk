@@ -59,7 +59,7 @@ color:white;
 }
 
 .color-inputs input{
-    width:30%;
+    width:40%;
     padding:10px;
     border-radius:8px;
     border:none;
@@ -70,9 +70,9 @@ color:white;
 }
 
 /* Fondos por color */
-#redInput { background-color: #b91c1c; }
-#greenInput { background-color: #15803d; }
-#blueInput { background-color: #1e40af; }
+#redInput { background-color: #ED2424; }
+#greenInput { background-color: #24ED6B; }
+#blueInput { background-color: #2499ED; }
 
 #pageTitle{
     font-family: 'Horizon', sans-serif;
@@ -97,6 +97,7 @@ color:white;
     margin-top: 20px;
     font-weight: 700; /* opcional */
 }
+
 
 
 
