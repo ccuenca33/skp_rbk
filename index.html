@@ -6,17 +6,17 @@
 
 <link rel="manifest" href="manifest.json">
 
-<title>Validación QR</title>
+<title>Validar Prueba</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="card">
-<h1>Introduce tu código</h1>
+<h1 id="pageTitle">INTRO</h1>
 
 <input id="codeInput" placeholder="Código">
-<button onclick="validate()">VALIDAR</button>
+<button id="validateBtn" onclick="validate()">VALIDAR</button>
 
 <div id="result"></div>
 </div>
@@ -31,3 +31,4 @@ if ('serviceWorker' in navigator) {
 
 </body>
 </html>
+
