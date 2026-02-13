@@ -55,6 +55,25 @@ window.onload = function(){
     if(titleMap[id]){
         document.getElementById("pageTitle").innerText = titleMap[id];
     }
+
+    let inputContainer = document.getElementById("inputContainer");
+
+    if(id === "P5"){
+        inputContainer.innerHTML = `
+            <div class="multi-inputs">
+                <input id="code1" maxlength="1" placeholder="A">
+                <input id="code2" maxlength="1" placeholder="B">
+                <input id="code3" maxlength="1" placeholder="C">
+                <input id="code4" maxlength="1" placeholder="D">
+            </div>
+            <button id="validateBtn" onclick="validate()">VALIDAR</button>
+        `;
+    } else {
+        inputContainer.innerHTML = `
+            <input id="codeInput" placeholder="Código">
+            <button id="validateBtn" onclick="validate()">VALIDAR</button>
+        `;
+    }
 }
 
 function validate(){
@@ -79,6 +98,7 @@ function validate(){
         }
     }
 }
+
 
 
 
