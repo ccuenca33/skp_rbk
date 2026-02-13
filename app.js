@@ -96,7 +96,7 @@ window.onload = function(){
                 <div>
                     <select id="blueSelect">
                         <option value=""></option>
-                        <option value="triangulo">▲ Triángulo</option>
+                        <option value="triangulo">⬜</option>
                         <option value="circulo">⚪</option>
                         <option value="aspa">🤍</option>
                     </select>
@@ -147,6 +147,7 @@ function validate(){
         }
     }
 }
+
 
 
 
