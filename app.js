@@ -43,6 +43,12 @@ let errorMap = {
 "P6": "❌ Código incorrecto<br>¡Ahora no me puedes fallar, si tienes mejor vista que yo!"
 };
 
+let validCodesP6 = {
+    "red": "triangulo",
+    "green": "circulo",
+    "blue": "aspa"
+};
+
 function getQRid(){
  let params = new URLSearchParams(window.location.search);
  return params.get("id");
@@ -61,10 +67,44 @@ window.onload = function(){
     if(id === "P5"){
         inputContainer.innerHTML = `
             <div class="multi-inputs">
-                <input id="code1" maxlength="1" placeholder="A">
-                <input id="code2" maxlength="1" placeholder="B">
-                <input id="code3" maxlength="1" placeholder="C">
-                <input id="code4" maxlength="1" placeholder="D">
+                <input id="code1" maxlength="1" placeholder="Código 1">
+                <input id="code2" maxlength="1" placeholder="Código 2">
+                <input id="code3" maxlength="1" placeholder="Código 3">
+                <input id="code4" maxlength="1" placeholder="Código 4">
+            </div>
+            <button id="validateBtn" onclick="validate()">VALIDAR</button>
+        `;
+    } else if(id === "P6"){
+        // 3 campos para colores y símbolos
+        inputContainer.innerHTML = `
+            <div class="color-inputs">
+                <div>
+                    <label>Rojo:</label>
+                    <select id="redSelect">
+                        <option value="">Selecciona</option>
+                        <option value="triangulo">▲ Triángulo</option>
+                        <option value="circulo">● Círculo</option>
+                        <option value="aspa">✖ Aspa</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Verde:</label>
+                    <select id="greenSelect">
+                        <option value="">Selecciona</option>
+                        <option value="triangulo">▲ Triángulo</option>
+                        <option value="circulo">● Círculo</option>
+                        <option value="aspa">✖ Aspa</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Azul:</label>
+                    <select id="blueSelect">
+                        <option value="">Selecciona</option>
+                        <option value="triangulo">▲ Triángulo</option>
+                        <option value="circulo">● Círculo</option>
+                        <option value="aspa">✖ Aspa</option>
+                    </select>
+                </div>
             </div>
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
@@ -77,27 +117,43 @@ window.onload = function(){
 }
 
 function validate(){
-    let code = document.getElementById("codeInput").value.trim().toUpperCase();
+    let id = getQRid();
     let result = document.getElementById("result");
+    let code;
 
-    let id = getQRid();  // usamos el mismo id que el QR
-
-    if(validCodes[code]){
-        // Mostrar mensaje de éxito específico según QR
-        if(successMap[id]){
-            result.innerHTML = "<div class='ok'>" + successMap[id] + "</div>";
+    if(id === "P5"){
+        let c1 = document.getElementById("code1").value.trim().toUpperCase();
+        let c2 = document.getElementById("code2").value.trim().toUpperCase();
+        let c3 = document.getElementById("code3").value.trim().toUpperCase();
+        let c4 = document.getElementById("code4").value.trim().toUpperCase();
+        code = c1 + c2 + c3 + c4;
+        if(validCodes[code]){
+            result.innerHTML = successMap[id];
         } else {
-            result.innerHTML = "<div class='ok'>✅Código válido</div>"; // fallback
+            result.innerHTML = errorMap[id];
+        }
+    } else if(id === "P6"){
+        let r = document.getElementById("redSelect").value;
+        let g = document.getElementById("greenSelect").value;
+        let b = document.getElementById("blueSelect").value;
+
+        if(r === validCodesP6.red && g === validCodesP6.green && b === validCodesP6.blue){
+            result.innerHTML = successMap[id];
+        } else {
+            result.innerHTML = errorMap[id];
         }
     } else {
-        // Mostrar mensaje de error específico según QR
-        if(errorMap[id]){
-            result.innerHTML = "<div class='fail'>" + errorMap[id] + "</div>";
+        code = document.getElementById("codeInput").value.trim().toUpperCase();
+        if(validCodes[code]){
+            result.innerHTML = successMap[id];
         } else {
-            result.innerHTML = "<div class='fail'>❌Código incorrecto</div>"; // fallback
+            result.innerHTML = errorMap[id];
         }
     }
 }
+
+
+
 
 
 
