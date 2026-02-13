@@ -1,9 +1,9 @@
 let validCodes = {
 "MAIRENA": "Acceso válido",
-"1422": "Acceso válido",
+"2241": "Acceso válido",
 "VMW": "Acceso válido",
 "H6K-31R": "Acceso válido",
-"MAIRENA1422VMWH6K-31R": "Acceso válido"
+"MAIRENA2241VMWH6K-31R": "Acceso válido"
 };
 
 let validCodesP6 = {
@@ -22,7 +22,7 @@ let titleMap = {
 };
 
 let successMap = {
-"P1": "✅ ¡Genial!<br>Acceso desbloqueado<br>Revela las cartas 4, 5, 6",
+"P1": "✅ ¡Genial!<br>Acceso desbloqueado. Ahora puedes consultar los recuerdos dañados.<br>Revela las cartas 4, 5, 6",
 "P2": "✅ ¡Maravilla parseluki!<br>Reconstrucción P2 completada<br>Revela las cartas...",
 "P3": "✅ ¡You're doing great!<br>Reconstrucción P3 completada<br>Revela las cartas...",
 "P4": "✅ ¡Dilo tatona!<br>Reconstrucción P4 completada<br>Revela las cartas...",
@@ -152,6 +152,7 @@ function validate(){
 
     }
 }
+
 
 
 
