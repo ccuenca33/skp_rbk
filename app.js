@@ -1,19 +1,23 @@
 let qrMap = {
-"P1": "SOL001",
-"P2": "SOL002",
-"P3": "SOL003",
-"P4": "SOL004",
-"P5": "ABCD",
-"P6": "SOL006"
+"P1": "Mairena",
+"P2": "1422",
+"P3": "VMW",
+"P4": "H6K-31R",
+"P5": "Mairena1422VMWH6K-31R"
 };
 
 let validCodes = {
-"SOL001": "Acceso válido",
-"SOL002": "Acceso válido",
-"SOL003": "Acceso válido",
-"SOL004": "Acceso válido",
-"SOL005": "Acceso válido",
-"SOL006": "Acceso válido"
+"Mairena": "Acceso válido",
+"1422": "Acceso válido",
+"VMW": "Acceso válido",
+"H6K-31R": "Acceso válido",
+"Mairena1422VMWH6K-31R": "Acceso válido"
+};
+
+let validCodesP6 = {
+    "red": 17,
+    "green": 16,
+    "blue": 15
 };
 
 let titleMap = {
@@ -41,12 +45,6 @@ let errorMap = {
 "P4": "❌ Código incorrecto<br>Joeee odio cuando se sobreescribe la memoria, no veo nada.",
 "P5": "❌ Código incorrecto<br>Al final todo tiene un sentido.",
 "P6": "❌ Código incorrecto<br>¡Ahora no me puedes fallar, si tienes mejor vista que yo!"
-};
-
-let validCodesP6 = {
-    "red": "triangulo",
-    "green": "circulo",
-    "blue": "aspa"
 };
 
 function getQRid(){
@@ -90,7 +88,7 @@ window.onload = function(){
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
     } else {
-        if(id === "P1"){
+        if(id === "P2"){
             inputContainer.innerHTML = `
                 <input id="codeInput" type="number">
                 <button id="validateBtn" onclick="validate()">VALIDAR</button>
@@ -139,6 +137,7 @@ function validate(){
         }
     }
 }
+
 
 
 
