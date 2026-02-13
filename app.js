@@ -78,13 +78,13 @@ window.onload = function(){
         inputContainer.innerHTML = `
             <div class="color-inputs">
                 <div>
-                    <input id="redInput" type="number" placeholder="Rojo">
+                    <input id="redInput" type="number">
                 </div>
                 <div>
-                    <input id="greenInput" type="number" placeholder="Verde">
+                    <input id="greenInput" type="number">
                 </div>
                 <div>
-                    <input id="blueInput" type="number" placeholder="Azul">
+                    <input id="blueInput" type="number">
                 </div>
             </div>
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
@@ -132,6 +132,7 @@ function validate(){
         }
     }
 }
+
 
 
 
