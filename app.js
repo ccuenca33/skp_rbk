@@ -1,11 +1,3 @@
-let qrMap = {
-"P1": "Mairena",
-"P2": "1422",
-"P3": "VMW",
-"P4": "H6K-31R",
-"P5": "Mairena1422VMWH6K-31R"
-};
-
 let validCodes = {
 "Mairena": "Acceso válido",
 "1422": "Acceso válido",
@@ -65,10 +57,10 @@ window.onload = function(){
     if(id === "P5"){
         inputContainer.innerHTML = `
             <div class="multi-inputs">
-                <input id="code1" maxlength="1" placeholder="Código 1">
-                <input id="code2" maxlength="1" placeholder="Código 2">
-                <input id="code3" maxlength="1" placeholder="Código 3">
-                <input id="code4" maxlength="1" placeholder="Código 4">
+                <input id="code1" type="text" placeholder="Código 1">
+                <input id="code2" type="text" placeholder="Código 2">
+                <input id="code3" type="text" placeholder="Código 3">
+                <input id="code4" type="text" placeholder="Código 4">
             </div>
             <button id="validateBtn" onclick="validate()">VALIDAR</button>
         `;
@@ -137,6 +129,7 @@ function validate(){
         }
     }
 }
+
 
 
 
