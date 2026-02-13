@@ -82,12 +82,12 @@ window.onload = function(){
     } else {
         if(id === "P2"){
             inputContainer.innerHTML = `
-                <input id="codeInput" type="number">
+                <input id="codeInput" type="number" placeholder="Código">
                 <button id="validateBtn" onclick="validate()">VALIDAR</button>
             `;
         } else {
             inputContainer.innerHTML = `
-                <input id="codeInput" type="text">
+                <input id="codeInput" type="text" placeholder="Código">
                 <button id="validateBtn" onclick="validate()">VALIDAR</button>
             `;
         }
@@ -129,6 +129,7 @@ function validate(){
         }
     }
 }
+
 
 
 
