@@ -99,36 +99,52 @@ function validate(){
     let result = document.getElementById("result");
     let code;
 
+    result.classList.remove("success","error");
+
     if(id === "P5"){
         let c1 = document.getElementById("code1").value.trim().toUpperCase();
         let c2 = document.getElementById("code2").value.trim().toUpperCase();
         let c3 = document.getElementById("code3").value.trim().toUpperCase();
         let c4 = document.getElementById("code4").value.trim().toUpperCase();
         code = c1 + c2 + c3 + c4;
+
         if(validCodes[code]){
             result.innerHTML = successMap[id];
+            result.classList.add("success");
         } else {
             result.innerHTML = errorMap[id];
+            result.classList.add("error");
         }
+
     } else if(id === "P6"){
+
         let r = document.getElementById("redSelect").value;
         let g = document.getElementById("greenSelect").value;
         let b = document.getElementById("blueSelect").value;
 
-        if(r === validCodesP6.red && g === validCodesP6.green && b === validCodesP6.blue){
+        if(r == validCodesP6.red && g == validCodesP6.green && b == validCodesP6.blue){
             result.innerHTML = successMap[id];
+            result.classList.add("success");
         } else {
             result.innerHTML = errorMap[id];
+            result.classList.add("error");
         }
+
     } else {
+
         code = document.getElementById("codeInput").value.trim().toUpperCase();
+
         if(validCodes[code]){
             result.innerHTML = successMap[id];
+            result.classList.add("success");
         } else {
             result.innerHTML = errorMap[id];
+            result.classList.add("error");
         }
     }
 }
+
+
 
 
 
