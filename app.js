@@ -1,9 +1,9 @@
 let validCodes = {
 "MAIRENA": "Acceso válido",
 "2241": "Acceso válido",
-"VMW": "Acceso válido",
+"VWM": "Acceso válido",
 "H6K-31R": "Acceso válido",
-"MAIRENA2241VMWH6K-31R": "Acceso válido"
+"MAIRENA2241VWMH6K-31R": "Acceso válido"
 };
 
 let validCodesP6 = {
@@ -152,6 +152,7 @@ function validate(){
 
     }
 }
+
 
 
 
