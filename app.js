@@ -3,13 +3,13 @@ let validCodes = {
 "2241": "Acceso válido",
 "VWM": "Acceso válido",
 "H6K-31R": "Acceso válido",
-"MAIRENA2241VWMH6K-31R": "Acceso válido"
+"2241MAIRENAH6K-31R100": "Acceso válido"
 };
 
 let validCodesP6 = {
-    "red": 17,
+    "red": 18,
     "green": 16,
-    "blue": 15
+    "blue": 17
 };
 
 let titleMap = {
@@ -22,11 +22,11 @@ let titleMap = {
 };
 
 let successMap = {
-"P1": "✅ ¡Genial!<br>Acceso desbloqueado. Ahora puedes consultar los recuerdos dañados.<br>Revela las cartas 4, 5 y 6",
-"P2": "✅ ¡Maravilla parseluki!<br>Reconstrucción P2 completada<br>Revela las cartas 7 y 8",
-"P3": "✅ ¡You're doing great!<br>Reconstrucción P3 completada<br>Revela las cartas 9, 10, 11 y 12",
-"P4": "✅ ¡Dilo tatona!<br>Reconstrucción P4 completada<br>Revela las cartas 13 y 14",
-"P5": "✅ ¡Illo cabesaaa!<br>Diagnóstico exitoso. Archivo restaurado correctamente.<br>Revela las cartas 15 y 16",
+"P1": "✅ ¡Genial!<br>Acceso desbloqueado. Ahora puedes consultar los recuerdos dañados. Revela las cartas 4, 5 y 6",
+"P2": "✅ ¡Maravilla parseluki!<br>Reconstrucción P2 completada. Revela las cartas 7 y 8",
+"P3": "✅ ¡You're doing great!<br>Reconstrucción P3 completada. Revela las cartas 9, 10, 11 y 12",
+"P4": "✅ ¡Dilo tatona!<br>Reconstrucción P4 completada. Revela las cartas 13 y 14",
+"P5": "✅ ¡Illo cabesaaa!<br>Diagnóstico exitoso. Archivo restaurado correctamente. Revela las cartas 15 y 16",
 "P6": "✅ ¡Mi maiti es la más informática!<br>Permisos admin conseguidos. Estás habilitada para generar recuerdos nuevos."
 };
 
@@ -152,6 +152,7 @@ function validate(){
 
     }
 }
+
 
 
 
